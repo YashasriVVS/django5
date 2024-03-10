@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SMS PROJECT - Contact Us</title>
+</head>
+
+<body bgcolor="lightblue">
+<h2 align="center">Contact Us</h2>
+<a href="{% url '' %}">Home</a>&nbsp;&nbsp;&nbsp;
+<a href="{% url 'about' %}">About project</a>&nbsp;&nbsp;&nbsp;
+<a href="{% url 'login' %}">Login</a>&nbsp;&nbsp;&nbsp;
+<a href="{% url 'contact' %}">Contact Us</a>&nbsp;&nbsp;&nbsp;
+
+<br><br>
+
+<div>
+    <h3>Contact Form</h3>
+    <form action="/submit_contact_form" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject"><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<br>
+
+<div>
+    <h3>Location</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3117.3964256121065!2d-122.07938718467343!3d37.4021427798373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbc15b99d4917%3A0xf291ebe20c9666d3!2sGoogleplex!5e0!3m2!1sen!2sus!4v1618930212101!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+<br>
+
+<div>
+    <h3>Connect With Us</h3>
+    <p>Follow us on social media:</p>
+    <a href="https://www.facebook.com/yourpage">Facebook</a><br>
+    <a href="https://twitter.com/yourpage">Twitter</a><br>
+    <a href="https://www.linkedin.com/company/yourpage">LinkedIn</a>
+</div>
+
+<br>
+
+<div>
+    <h3>Support Hours</h3>
+    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+</div>
+
+</body>
+</html>
